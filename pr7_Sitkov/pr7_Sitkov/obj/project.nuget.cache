@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "u8TfvJLVVSI=",
+  "success": true,
+  "projectFilePath": "C:\\System\\pr7_Sitkov\\pr7_Sitkov\\pr7_Sitkov.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\st310-09\\.nuget\\packages\\materialdesigncolors\\5.4.0\\materialdesigncolors.5.4.0.nupkg.sha512",
+    "C:\\Users\\st310-09\\.nuget\\packages\\materialdesignthemes\\5.4.0\\materialdesignthemes.5.4.0.nupkg.sha512",
+    "C:\\Users\\st310-09\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.142\\microsoft.xaml.behaviors.wpf.1.1.142.nupkg.sha512"
+  ],
+  "logs": []
+}

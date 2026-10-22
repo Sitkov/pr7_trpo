@@ -1,0 +1,57 @@
+@pr6_Sitkov_HostAddress = http://localhost:5216
+
+### 1. Получить все тренировки (GET all)
+GET {{pr6_Sitkov_HostAddress}}/api/v1/Trainings
+Accept: application/json
+
+### 2. Фильтрация по тренеру (Query String: trainer)
+GET {{pr6_Sitkov_HostAddress}}/api/v1/Trainings?trainer=Иванов
+Accept: application/json
+
+### 3. Фильтрация по минимальной продолжительности (Query String: minDuration)
+GET {{pr6_Sitkov_HostAddress}}/api/v1/Trainings?minDuration=60
+Accept: application/json
+
+### 4. Фильтрация по тренеру и минимальной продолжительности (trainer + minDuration)
+GET {{pr6_Sitkov_HostAddress}}/api/v1/Trainings?trainer=Иванов&minDuration=45
+Accept: application/json
+
+### 5. Получить тренировку по Id (GET by id)
+GET {{pr6_Sitkov_HostAddress}}/api/v1/Trainings/1
+Accept: application/json
+
+### 6. Добавить новую тренировку (POST)
+POST {{pr6_Sitkov_HostAddress}}/api/v1/Trainings
+Content-Type: application/json
+
+{
+  "title": "Функциональный тренинг",
+  "trainer": "Ситков Даниил",
+  "durationMinutes": 60,
+  "price": 1500.00,
+  "isActive": true
+}
+
+### 7. Полное изменение тренировки (PUT)
+PUT {{pr6_Sitkov_HostAddress}}/api/v1/Trainings/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "Силовая тренировка PRO",
+  "trainer": "Ситков Даниил",
+  "durationMinutes": 90,
+  "price": 2000.00,
+  "isActive": true
+}
+
+### 8. Частичное изменение тренировки (PATCH: например, только цена)
+PATCH {{pr6_Sitkov_HostAddress}}/api/v1/Trainings/1
+Content-Type: application/json
+
+{
+  "price": 2500.00
+}
+
+### 9. Удаление тренировки (DELETE)
+DELETE {{pr6_Sitkov_HostAddress}}/api/v1/Trainings/1

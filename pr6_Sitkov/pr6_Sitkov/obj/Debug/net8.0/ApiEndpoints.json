@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "pr6_Sitkov.Controllers.TrainingsController",
+    "Method": "GetAll",
+    "RelativePath": "api/v1/Trainings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainer",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pr6_Sitkov.Controllers.TrainingsController",
+    "Method": "Create",
+    "RelativePath": "api/v1/Trainings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "training",
+        "Type": "pr6_Sitkov.Models.Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pr6_Sitkov.Controllers.TrainingsController",
+    "Method": "Get",
+    "RelativePath": "api/v1/Trainings/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pr6_Sitkov.Controllers.TrainingsController",
+    "Method": "Update",
+    "RelativePath": "api/v1/Trainings/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "training",
+        "Type": "pr6_Sitkov.Models.Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pr6_Sitkov.Controllers.TrainingsController",
+    "Method": "Patch",
+    "RelativePath": "api/v1/Trainings/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tr",
+        "Type": "pr6_Sitkov.Models.Training",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pr6_Sitkov.Controllers.TrainingsController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/Trainings/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
